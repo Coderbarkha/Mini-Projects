@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background:linear-gradient(to right,#f58529, #f77737, #ec008c, #d3007d, #9b2e9f);
+}
+.container{
+    height:605px;
+    width:400px;
+    border:2px solid black;
+    border-radius: 12px;
+    margin: 25px 450px 40px;
+    overflow:hidden;
+    background-color: white;
+    box-shadow: 0 0 20px #333;
+}
+.user-name{
+    border: 1px solid white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+}
+.user-name h3{
+    margin-top: 10px;
+    margin-right: 16px;
+    cursor:default;
+}
+
+.user-name #p{
+    height: 50px;
+    width: 50px;
+    margin-right: 160px;
+    cursor: pointer;
+}
+.user-name #s{
+    height: 50px;
+    width: 50px;
+    margin-left: 72px;
+    cursor: pointer;
+}
+.user-name #o{
+    height: 29px;
+    margin-top: 8px;
+    width: 28px;
+    cursor: pointer;
+}
+.profile{
+    border:1px solid white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.profile img{
+    border:1px solid white;
+    border-radius: 40px;
+    height:70px;
+    width:70px;
+    margin-right:105px;
+    cursor: pointer;
+}
+.profile p{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+#pname{
+    font-size: 15px;
+    font-weight: bold;
+    border:1px solid white;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.insta-bio{
+    font-size: 14px;
+}
+#web{
+    color: blue;
+    margin-top: 5px;
+}
+.follow{
+
+    display: flex;
+    justify-content: center;
+    border:1px solid white;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.follow button{
+    width:176px;
+    border:1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.follow #f{
+    margin-right: 6px;
+    background-color: rgb(15, 186, 243);
+    color: white;
+}
+.follow img{
+    width:25px;
+    height:25px;
+    margin-left: 6px;
+    border:1px solid rgba(128, 128, 128, 0.171);
+    border-radius: 3px;
+}
+.follow button:hover{
+    transition: 1s;
+}
+.highlight{
+    display:flex;
+    justify-content: flex-start;
+    border:1px solid white;
+    height:60px;
+}
+.highlight img{
+    height:50px;
+    width:50px;
+    border:6px solid white;
+    border-radius: 35px;
+    outline:2px solid rgba(128, 128, 128, 0.301);
+}
+.highlight #h1{
+    margin-left: 10px;
+}
+.highlight #h2{
+    margin-left: 12px;
+}
+.posts{
+    height:232px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+.posts img{
+    height: 53%;
+    width: 33%;
+    object-fit: cover;
+}
+.post-icon{
+    display:flex;
+    justify-content: center;
+}
+.post-icon img{
+    height:25px;
+    width:30px;
+    color:black;
+    cursor: pointer;
+} 
+.post-icon #f{
+    margin-right: 95px;
+}
+.post-icon #r{
+    margin-right: 95px;
+}
+.post-icon #t{
+    margin-right: 15px;
+}

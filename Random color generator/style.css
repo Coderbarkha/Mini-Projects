@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    transition:background-color 0.5s;
+}
+#color-code{
+    font-size: 3rem;
+    margin-top: 20px;
+}
+div{
+    height: 200px;
+    width:500px;
+    display: flex;
+    justify-content: center;
+}
+img {
+    border-radius: 15px;
+    height: 300px;
+    width: 500px;
+}
+button{
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 15px;
+    color: blueviolet;
+    border:3px solid blue;
+    font-weight: bold;
+}

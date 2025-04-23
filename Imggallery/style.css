@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Poppins',sans-serif;
+    background-color:white;
+    color:black;
+}
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    max-width: 1000px;
+    height:100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container h1{
+    font-size: 3rem;
+    text-align: center;
+    margin:20px 0;
+    margin-bottom: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width: 32%;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 20px #333;
+    filter: grayscale(100%);
+    object-fit: cover;
+}
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+    filter: drop-shadow(0 0 10 #333);
+}
+.card:hover img{
+    filter: grayscale(0%);
+}
+figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    width:100%;
+    opacity: 0;
+    height: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    color:#fff;
+    transition: 0.3s;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.123)0%,rgba(255, 255, 255, 0.233));
+}
+.card:hover figcaption{
+    opacity: 1;
+    transform: scale(1.03);
+}

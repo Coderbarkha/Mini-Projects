@@ -1,0 +1,323 @@
+/* styles.css */
+
+:root {
+    --saffron: #FF9933;
+    --white: #ffffff;
+    --gold: #B8860B;
+    --maroon: #800000;
+    --font-heading: 'Marcellus', serif;
+    --font-body: 'Merriweather', serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--white);
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  /* Navbar Styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #ff9933; /* Saffron Theme */
+    font-family: 'Marcellus', serif;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #fff8e1;
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      background-color: #ff9933;
+      position: absolute;
+      right: 0;
+      top: 60px;
+      width: 100%;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .navbar {
+      flex-wrap: wrap;
+    }
+  }
+  
+  
+  h1, h2 {
+    font-family: var(--font-heading);
+    color: var(--maroon);
+    text-align: center;
+  }
+  
+  section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('shriram.jfif') center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .overlay {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    animation: fadeInDown 2s ease;
+  }
+  
+  .overlay h1 {
+    font-size: 3em;
+    color: var(--saffron);
+  }
+  
+  .overlay p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: var(--maroon);
+  }
+  
+  .about {
+    padding: 40px 20px;
+    background-color: #fff8e1;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .about h2 {
+    text-align: center;
+    color: #b86e00;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px;
+    border-left: 4px solid #ff9933;
+  }
+  
+  .event {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 20px;
+  }
+  
+  .event::before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    background-color: #ff9933;
+    border: 3px solid white;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .event h3 {
+    margin: 0;
+    color: #c46200;
+    font-size: 1.2rem;
+  }
+  
+  .event p {
+    margin-top: 8px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .timeline {
+      padding-left: 10px;
+      border-left: 3px solid #ff9933;
+    }
+  
+    .event::before {
+      left: -9px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+  
+  
+  /* Values Section */
+  .values ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+  }
+  
+  .values li {
+    background: var(--gold);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .values li:hover {
+    transform: scale(1.05);
+  }
+  
+  .values i {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  /* Significance Section */
+  .significance img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Aarti Section */
+  .aarti audio {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  /* Temples Section */
+  .temple-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .temple {
+    padding: 20px;
+    background: var(--saffron);
+    color: var(--white);
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .temple:hover {
+    background: var(--maroon);
+  }
+  
+  /* Contact Section */
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--font-body);
+  }
+  
+  .contact button {
+    background: var(--saffron);
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .contact button:hover {
+    background: var(--gold);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--maroon);
+    color: var(--white);
+    font-size: 0.9em;
+  }
+  
+  footer a {
+    color: var(--saffron);
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .overlay h1 {
+      font-size: 2em;
+    }
+    .values li {
+      width: 100%;
+    }
+  }
+  

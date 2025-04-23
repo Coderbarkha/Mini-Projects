@@ -1,0 +1,81 @@
+/* Universal selector*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+/*body*/
+body{
+    background-color: whitesmoke;
+}
+/* heading for card*/
+h2{
+        padding: 10px 0;
+        font-size: 1rem;
+        background: linear-gradient(to right, yellow, orange);
+        text-align: center;
+        color: darkred;
+        border-bottom: 2px solid darkcyan;
+}
+/* Container that conatins all cards*/
+.container{
+    height:600px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 340px 340px;
+    justify-content: center;
+}
+/*Styling images*/
+img{
+    height: 200px;
+    width:220px;
+    border:9px solid white;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+/*Hover effect on iamge*/
+img:hover{
+    transform: scale(1.1);
+}
+/* card of all images*/
+.card{
+    position: relative;
+    border-radius: 25px;
+    height: 300px;
+    padding: 12px;
+    width:230px;
+    text-align: center;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);/*Subtle effect*/
+}
+/*Hover effect on card*/
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+/* Product title*/
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+/*Price */
+.price {
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* Styling Buy now button*/
+button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+/*Hover effect on button*/
+button:hover {
+    background-color: darkblue;
+}

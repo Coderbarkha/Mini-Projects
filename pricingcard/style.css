@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: blanchedalmond;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    color:blueviolet;
+}
+.container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 500px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 3px solid blue;
+    height: 370px;
+    width: 300px;
+    padding: 12px;
+    margin-top: 90px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 20px solid black;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.6s;
+}
+.card .plan{
+    font-size: 30px;
+    color:blue;
+}
+.price{
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: 40px;
+    font-size: 40px;
+    color: black;
+    object-fit: cover;
+}
+.features{
+    list-style-type: none;
+    font-size: 20px;
+    color: chartreuse;
+}
+button{
+    margin-top: 100px;
+    margin-right: 120px;
+    margin-left: 90px;
+    width:150px;
+    height:40px;
+    border: white;
+    border-radius: 20px;
+    color: blueviolet;
+    background-color:white;
+    cursor: pointer;
+}
+button:hover{
+background-color: chartreuse;
+}

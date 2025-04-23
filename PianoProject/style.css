@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    background: #f0f0f0;
+    font-family: sans-serif;
+  }
+  
+  .piano {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .white{
+    background-color: white;
+    color:black
+  }
+  .black{
+    background-color: black;
+    color: white;
+  }
+  
+   .key {
+    border: 1px solid black;
+    width: 60px;
+    height: 200px;
+    margin: 2px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .key:active {
+    background: #ccc;
+  }
+   
